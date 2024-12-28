@@ -849,7 +849,6 @@
   background: #fff;
   border-radius: 19px;
   gap: 62px;
-
   transition: 0.3s;
 }
 .event-card > a:hover {
@@ -1305,4 +1304,85 @@
 .slider-container button.prev :hover,
 .slider-container button.next:hover {
   color: #fa7353;
+}
+/* Event details */
+.article-event {
+  margin-top: 60px;
+}
+.article-event-header .header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 42px;
+}
+.article-event-header .header-info .heading-h18 {
+  margin-bottom: 8px;
+}
+.article-event-header .header-info .heading-h32{
+  color: #b53518;
+} 
+.article-event-header .event-button {
+  position: static;
+}
+.article-event-header strong {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.article-event-header{
+  position: relative;
+  margin-bottom: 60px;
+}
+.article-event-header::after{
+  position: absolute;
+  content: "";
+  bottom: -22px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #9994aa;
+}
+.article-event-content .heading-h18 {
+  margin-bottom: 45px;
+}
+
+.article-event-content figure {
+  margin-top: 58px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article-event-content figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 22px;
+}
+.article-event-content figure figcaption {
+  margin-bottom: 58px;
+}
+.article-event-content{
+  position: relative;
+  margin-bottom: 105px;
+}
+.article-event-content::after{
+  position: absolute;
+  content: "";
+  bottom: -84px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #9994aa;
+}
+.article-event .social-interactions {
+  justify-content: end;
+  margin-bottom: 186px;
+}
+
+.related-events .heading-h40 {
+  text-align: center;
+  margin-bottom: 67px;
+}
+.related-events .event-card:first-child {
+  margin-bottom: 67px;
 }
