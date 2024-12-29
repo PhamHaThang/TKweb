@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhận nuôi</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/favicon_io/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- link Css  -->
+    <link rel="stylesheet" href="./assets/css/globals.css" />
+    <link rel="stylesheet" href="./assets/css/styleguide.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="content">
+        <nav class="main-nav">
+          <div class="nav-left">
+            <a href="index.html" class="logo">
+              <img
+                src="./assets/img/logo.svg"
+                alt="FurEver Logo"
+                class="ogo-image"
+              />
+            </a>
+            <ul class="nav-links">
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="#" class="active">Nhận nuôi</a></li>
+              <li><a href="news.html">Tin tức</a></li>
+              <li><a href="/huong-dan">Hướng dẫn</a></li>
+              <li><a href="about-us.html">Về chúng tôi</a></li>
+            </ul>
+          </div>
+          <div class="nav-actions nav-right">
+            <a href="/ung-ho" class="button button-secondary">Ủng hộ</a>
+            <div class="auth-links">
+              <a href="/dang-nhap">Đăng nhập</a>
+              <span>/</span>
+              <a href="/dang-ky">Đăng ký</a>
+            </div>
+            <div class="user">
+              <img src="./assets/img/user.svg" alt="" />
+              <p class="heading-h18">Chức Nguyễn</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="adoption-page">
+      <section class="breadcrumb">
+        <div class="content">
+          <p class="paragraph-p3"><a href="index.html">Trang chủ</a></p>
+          <p class="paragraph-p3">&gt;</p>
+          <p class="paragraph-p3">Nhận nuôi</p>
+        </div>
+      </section>
+      <section class="intro">
+        <div class="content">
+          <h1 class="heading-h54">Nhận nuôi</h1>
+          <p class="paragraph-p3">
+            Tìm kiếm vật nuôi yêu thích của bạn đơn giản hơn bao giờ hết với
+            FurEver
+          </p>
+        </div>
+      </section>
+      <div class="search-container-filter">
+        <form
+          action=""
+          id="search-form"
+          class="search-container"
+          action="/search"
+          method="get"
+        >
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Tìm kiếm thú cưng"
+              aria-label="Tìm kiếm thú cưng"
+              class="paragraph-p3"
+              id="search-input"
+            />
+            <button type="submit" class="search-icon">
+              <img src="assets/img/search-icon.svg" alt="" />
+            </button>
+          </div>
+        </form>
+        <svg
+          width="52"
+          height="52"
+          viewBox="0 0 52 52"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="filter-icon"
+        >
+          <rect width="52" height="52" rx="15.1667" fill="currentColor" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.1282 16H33.8718C35.0476 16 36 16.9811 36 18.1923V19.7238C36 20.3113 35.7704 20.8756 35.3627 21.2871L28.8577 27.867C28.7454 27.9816 28.5931 28.0452 28.4355 28.0441L22.9889 28.0272C22.8232 28.0272 22.6656 27.9561 22.5524 27.832L16.5745 21.2574C16.2049 20.8512 16 20.3145 16 19.7577V18.1933C16 16.9821 16.9524 16 18.1282 16ZM23.2801 29.8241L28.1347 29.839C28.4374 29.8401 28.6824 30.0935 28.6824 30.4043V33.1353C28.6824 33.4471 28.5053 33.7293 28.2294 33.8597L23.8227 35.9289C23.7197 35.9767 23.6106 36 23.5015 36C23.3563 36 23.2111 35.9576 23.0845 35.8738C22.8631 35.7274 22.7293 35.475 22.7293 35.2046V30.3894C22.7293 30.0766 22.9764 29.8231 23.2801 29.8241Z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <div class="content">
+        <div class="filter-form hidden">
+          <form>
+            <div class="filter-group">
+              <label class="filter-label">Loài</label>
+              <div class="filter-options">
+                <label class="option-container">
+                  <input type="checkbox" name="species" value="dog" />
+                  <span class="checkmark"></span>
+                  Chó
+                </label>
+                <label class="option-container">
+                  <input type="checkbox" name="species" value="cat" />
+                  <span class="checkmark"></span>
+                  Mèo
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Giới tính</label>
+              <div class="filter-options">
+                <label class="option-container">
+                  <input type="checkbox" name="gender" value="male" />
+                  <span class="checkmark"></span>
+                  Đực
+                </label>
+                <label class="option-container">
+                  <input type="checkbox" name="gender" value="female" />
+                  <span class="checkmark"></span>
+                  Cái
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Phí nhận nuôi</label>
+              <div class="filter-options">
+                <label class="option-container">
+                  <input
+                    type="checkbox"
+                    name="adoption-fee"
+                    value="under-200k"
+                  />
+                  <span class="checkmark"></span>
+                  &lt;200k
+                </label>
+                <label class="option-container">
+                  <input
+                    type="checkbox"
+                    name="adoption-fee"
+                    value="200k-500k"
+                  />
+                  <span class="checkmark"></span>
+                  200k-500k
+                </label>
+                <label class="option-container">
+                  <input
+                    type="checkbox"
+                    name="adoption-fee"
+                    value="over-500k"
+                  />
+                  <span class="checkmark"></span>
+                  &gt;500k
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Tuổi</label>
+              <div class="filter-options">
+                <label class="option-container">
+                  <input type="checkbox" name="age" value="under-3-months" />
+                  <span class="checkmark"></span>
+                  &lt;3 tháng
+                </label>
+                <label class="option-container">
+                  <input type="checkbox" name="age" value="3-6-months" />
+                  <span class="checkmark"></span>
+                  3-6 tháng
+                </label>
+                <label class="option-container">
+                  <input type="checkbox" name="age" value="6-12-months" />
+                  <span class="checkmark"></span>
+                  6-12 tháng
+                </label>
+                <label class="option-container">
+                  <input type="checkbox" name="age" value="over-1-year" />
+                  <span class="checkmark"></span>
+                  &gt;1 năm
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Tiêm phòng</label>
+              <div class="filter-options">
+                <label class="option-container">
+                  <input type="checkbox" name="vaccination" value="yes" />
+                  <span class="checkmark"></span>
+                  Rồi
+                </label>
+                <label class="option-container">
+                  <input type="checkbox" name="vaccination" value="no" />
+                  <span class="checkmark"></span>
+                  Chưa
+                </label>
+              </div>
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">Triệt sản</label>
+              <div class="filter-options">
+                <label class="option-container">
+                  <input type="checkbox" name="sterilization" value="yes" />
+                  <span class="checkmark"></span>
+                  Rồi
+                </label>
+                <label class="option-container">
+                  <input type="checkbox" name="sterilization" value="no" />
+                  <span class="checkmark"></span>
+                  Chưa
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <label class="filter-label">Tiền sử bệnh lý</label>
+              <div class="filter-options">
+                <label class="option-container">
+                  <input type="checkbox" name="medical-history" value="yes" />
+                  <span class="checkmark"></span>
+                  Có
+                </label>
+                <label class="option-container">
+                  <input type="checkbox" name="medical-history" value="no" />
+                  <span class="checkmark"></span>
+                  Không
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="filter-button heading-h18">Lọc</button>
+          </form>
+        </div>
+      </div>
+      <div class="pet-lists">
+        <div class="content">
+          <div class="results-header hidden">
+            <p class="paragraph-p3">
+              Tìm thấy <span class="results-count">34</span> kết quả cho từ khóa
+              <span class="search-keyword">'chó poddle'</span>
+            </p>
+          </div>
+          <div class="pet-container">
+            <div class="sort-options">
+              <label for="sort-by" class="paragraph-p3">Sắp xếp theo</label>
+              <button class="relevant-button heading-h18">Liên quan</button>
+              <div class="custom-select">
+                <div class="select-selected">Ngày cứu trợ</div>
+                <div class="select-items">
+                  <div class="select-item" data-value="low-to-high">
+                    Cũ nhất
+                  </div>
+                  <div class="select-item" data-value="high-to-low">
+                    Mới nhất
+                  </div>
+                </div>
+              </div>
+              <div class="custom-select">
+                <div class="select-selected">Thứ tự chữ cái</div>
+                <div class="select-items">
+                  <div class="select-item" data-value="low-to-high">A-Z</div>
+                  <div class="select-item" data-value="high-to-low">Z-A</div>
+                </div>
+              </div>
+              <div class="custom-select">
+                <div class="select-selected">Tuổi</div>
+                <div class="select-items">
+                  <div class="select-item" data-value="low-to-high">
+                    Nhỏ đến Lớn
+                  </div>
+                  <div class="select-item" data-value="high-to-low">
+                    Lớn đến Nhỏ
+                  </div>
+                </div>
+              </div>
+              <div class="custom-select">
+                <div class="select-selected">Phí nhận nuôi</div>
+                <div class="select-items">
+                  <div class="select-item" data-value="low-to-high">
+                    Thấp đến Cao
+                  </div>
+                  <div class="select-item" data-value="high-to-low">
+                    Cao đến Thấp
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pet-cards">
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+              <article class="pet-card">
+                <img
+                  src="./assets/img/pet-ellipse1.svg"
+                  alt="Susu"
+                  class="pet"
+                />
+                <div class="card-name">
+                  <img src="./assets/img/dog-icon-small.svg" alt="" />
+                  <h3 class="heading-h22">Susu</h3>
+                </div>
+                <div class="card-infos">
+                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="161"
+                    height="2"
+                    viewBox="0 0 161 2"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1H160"
+                      stroke="#9994AA"
+                      stroke-width="0.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                    <img src="./assets/img/x-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <div class="card-info">
+                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                    <img src="./assets/img/tick-icon.svg" alt="" />
+                  </div>
+                  <img src="./assets/img/divider.svg" alt="" class="divider" />
+                  <p><strong>Giống:</strong> Poodle</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <a
+          href="?page=1"
+          class="page-item prev heading-h18 disabled"
+          aria-disabled="true"
+          >&lt;</a
+        >
+        <a href="?page=1" class="page-item heading-h18 active" data-page="1">
+          1
+        </a>
+        <a href="?page=2" class="page-item heading-h18" data-page="2">2</a>
+        <a href="?page=3" class="page-item heading-h18" data-page="3">3</a>
+        <a href="?page=4" class="page-item heading-h18" data-page="4">4</a>
+        <a href="?page=5" class="page-item heading-h18" data-page="5">5</a>
+        <a href="?page=6" class="page-item heading-h18" data-page="6">6</a>
+        <a href="?page=7" class="page-item heading-h18" data-page="7">7</a>
+        <a href="?page=2" class="page-item next heading-h18">&gt;</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="content">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="assets/img/logo.svg" alt="FurEver logo" />
+          </div>
+          <p class="footer-description paragraph-p4">
+            Chuyên kết nối người yêu động vật với thú cưng. Cam kết mang đến
+            những cơ hội để mỗi động vật có thể tìm được một ngôi nhà yêu
+            thương.
+          </p>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/nhan-nuoi">Nhận nuôi</a></li>
+            <li><a href="/tin-tuc">Tin tức</a></li>
+            <li><a href="/huong-dan">Hướng dẫn</a></li>
+            <li><a href="/ve-chung-toi">Về chúng tôi</a></li>
+            <li><a href="/ung-ho">Ủng hộ</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <div class="title-contact">
+            <h3 class="heading-h18">Liên hệ</h3>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/" aria-level="Facebook">
+                <svg
+                  width="11"
+                  height="20"
+                  viewBox="0 0 11 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 11.5H9.5L10.5 7.5H7V5.5C7 4.47 7 3.5 9 3.5H10.5V0.14C10.174 0.0970001 8.943 0 7.643 0C4.928 0 3 1.657 3 4.7V7.5H0V11.5H3V20H7V11.5Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/" aria-level="Instagram">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 6.5C15.8284 6.5 16.5 5.82843 16.5 5C16.5 4.17157 15.8284 3.5 15 3.5C14.1716 3.5 13.5 4.17157 13.5 5C13.5 5.82843 14.1716 6.5 15 6.5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M14 1C16.76 1 19 3.24 19 6V14C19 16.76 16.76 19 14 19H6C3.24 19 1 16.76 1 14V6C1 3.24 3.24 1 6 1H10H14Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10 6C12.21 6 14 7.79 14 10C14 12.21 12.21 14 10 14C7.79 14 6 12.21 6 10C6 7.79 7.79 6 10 6Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/" aria-level="Youtube">
+                <svg
+                  width="20"
+                  height="14"
+                  viewBox="0 0 20 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 10L13.19 7L8 4V10ZM19.56 2.17C19.69 2.64 19.78 3.27 19.84 4.07C19.91 4.87 19.94 5.56 19.94 6.16L20 7C20 9.19 19.84 10.8 19.56 11.83C19.31 12.73 18.73 13.31 17.83 13.56C17.36 13.69 16.5 13.78 15.18 13.84C13.88 13.91 12.69 13.94 11.59 13.94L10 14C5.81 14 3.2 13.84 2.17 13.56C1.27 13.31 0.69 12.73 0.44 11.83C0.31 11.36 0.22 10.73 0.16 9.93C0.0900001 9.13 0.0599999 8.44 0.0599999 7.84L0 7C0 4.81 0.16 3.2 0.44 2.17C0.69 1.27 1.27 0.69 2.17 0.44C2.64 0.31 3.5 0.22 4.82 0.16C6.12 0.0899998 7.31 0.0599999 8.41 0.0599999L10 0C14.19 0 16.8 0.16 17.83 0.44C18.73 0.69 19.31 1.27 19.56 2.17Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-info">
+            <div class="contact-icon">
+              <img src="assets/img/phone-icon.svg" alt="Phone" />
+            </div>
+            <p class="paragraph-p4">(+84)123456789</p>
+          </div>
+          <div class="contact-info">
+            <div class="contact-icon">
+              <img src="assets/img/mail-icon.svg" alt="Mail" />
+            </div>
+            <p class="paragraph-p4">furever.vn@gmail.com</p>
+          </div>
+          <div class="contact-info">
+            <div class="contact-icon">
+              <img src="assets/img/address-icon.svg" alt="Address" />
+            </div>
+            <p class="paragraph-p4">
+              Km 10 đường Nguyễn Trãi, phường Mộ Lao, quận Hà Đông, Hà Nội, Việt
+              Nam
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="floating-buttons">
+      <a class="back-to-top"
+        ><img src="assets/img/arrow-up.svg" alt="Scroll to top"
+      /></a>
+      <a
+        href="https://www.facebook.com/"
+        class="chat-button"
+        aria-label="Open chat"
+      >
+        <img src="assets/img/facebook-contact.svg" alt="Chat" />
+      </a>
+    </div>
+    <script src="index.js"></script>
+    <script>
+      // Select
+      const customSelects = document.querySelectorAll(".custom-select");
+      customSelects.forEach((customSelect) => {
+        const selectSelected = customSelect.querySelector(".select-selected");
+        const selectItems = customSelect.querySelector(".select-items");
+        const selectItemList = customSelect.querySelectorAll(".select-item");
+
+        // Mở/đóng danh sách tùy chọn
+        selectSelected.addEventListener("click", function () {
+          selectItems.style.opacity =
+            selectItems.style.opacity === "1" ? "0" : "1";
+          selectSelected.classList.toggle("select-arrow-active");
+        });
+
+        // Xử lý khi chọn một tùy chọn
+        selectItemList.forEach((item) => {
+          item.addEventListener("click", function () {
+            selectSelected.textContent = this.textContent;
+            selectItems.style.opacity = "0";
+            selectSelected.classList.remove("select-arrow-active");
+
+            // Lấy giá trị của tùy chọn (data-value)
+            const selectedValue = this.dataset.value;
+            console.log("Selected value:", selectedValue);
+          });
+        });
+        // Đóng danh sách khi click ra ngoài
+        document.addEventListener("click", function (event) {
+          if (!customSelect.contains(event.target)) {
+            selectItems.style.opacity = "0";
+            selectSelected.classList.remove("select-arrow-active");
+          }
+        });
+      });
+
+      // Filter
+      const filterIcon = document.querySelector(".filter-icon");
+      const filterForm = document.querySelector(".filter-form");
+
+      filterIcon.addEventListener("click", function () {
+        filterForm.classList.toggle("hidden");
+      });
+      // Pagination
+      const pagination = document.querySelector(".pagination");
+      const pageItems = pagination.querySelectorAll(".page-item");
+      const prevButton = pagination.querySelector(".prev");
+      const nextButton = pagination.querySelector(".next");
+      const urlParams = new URLSearchParams(window.location.search);
+      let currentPage = parseInt(urlParams.get("page")) || 1;
+      const totalPages = 7;
+      function updatePagination() {
+        pageItems.forEach((item) => {
+          const pageNumber = parseInt(item.dataset.page);
+          if (pageNumber) {
+            if (pageNumber === currentPage) {
+              item.classList.add("active");
+            } else {
+              item.classList.remove("active");
+            }
+          }
+        });
+        // Disable nút previous nếu ở trang đầu
+        if (currentPage === 1) {
+          prevButton.setAttribute("aria-disabled", "true");
+          prevButton.classList.add("disabled");
+          prevButton.removeAttribute("href");
+        } else {
+          prevButton.classList.remove("disabled");
+          prevButton.setAttribute("href", `?page=${currentPage - 1}`);
+          prevButton.removeAttribute("aria-disabled");
+        }
+        if (currentPage == totalPages) {
+          nextButton.classList.add("disabled");
+          nextButton.removeAttribute("href");
+        } else {
+          nextButton.classList.remove("disabled");
+          nextButton.setAttribute("href", `?page=${currentPage + 1}`);
+        }
+      }
+      function handlePageClick(event) {
+        const clickedItem = event.target;
+        const newPage = parseInt(clickedItem.dataset.page);
+        if (!isNaN(newPage)) {
+          currentPage = newPage;
+        } else if (clickedItem.classList.contains("prev")) {
+          currentPage--;
+        } else if (clickedItem.classList.contains("next")) {
+          currentPage++;
+        }
+        updatePagination();
+      }
+      updatePagination();
+    </script>
+    <script>
+      //Searc
+      const searchForm = document.getElementById("search-form");
+      const searchInput = document.getElementById("search-input");
+      const searchIcon = document.getElementById("search-icon");
+      const resultsHeader = document.querySelector(".results-header");
+      const resultsCount = document.querySelector(".results-count");
+      const searchKeyword = document.querySelector(".search-keyword");
+
+      searchForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Ngăn chặn form gửi đi
+
+        const keyword = searchInput.value.trim();
+        if (keyword) {
+          // Cập nhật kết quả tìm kiếm
+          resultsCount.textContent = "34"; // Bạn có thể thay đổi số lượng kết quả tìm thấy
+          searchKeyword.textContent = `'${keyword}'`;
+          resultsHeader.classList.remove("hidden"); // Hiển thị results-header
+        }
+      });
+
+      searchIcon.addEventListener("click", function () {
+        searchForm.dispatchEvent(new Event("submit"));
+      });
+    </script>
+  </body>
+</html>

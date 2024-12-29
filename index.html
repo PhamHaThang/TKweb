@@ -32,7 +32,7 @@
             </a>
             <ul class="nav-links">
               <li><a href="#" class="active">Trang chủ</a></li>
-              <li><a href="/nhan-nuoi">Nhận nuôi</a></li>
+              <li><a href="adoption.html">Nhận nuôi</a></li>
               <li><a href="news.html">Tin tức</a></li>
               <li><a href="/huong-dan">Hướng dẫn</a></li>
               <li><a href="about-us.html">Về chúng tôi</a></li>
@@ -40,12 +40,12 @@
           </div>
           <div class="nav-actions nav-right">
             <a href="/ung-ho" class="button button-secondary">Ủng hộ</a>
-            <div class="auth-links" >
+            <div class="auth-links">
               <a href="login.html">Đăng nhập</a>
               <span>/</span>
               <a href="signup.html">Đăng ký</a>
             </div>
-            <div class="user" >
+            <div class="user">
               <img src="./assets/img/user.svg" alt="" />
               <p class="heading-h18">Chức Nguyễn</p>
               <div class="user-dropdown">
@@ -60,12 +60,19 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="home">
       <section class="hero">
         <div class="hero__content">
           <h1 class="heading-h54">Bạn Đã Sẵn Sàng Cho Một Người Bạn Mới?</h1>
           <p class="paragraph-p3">
-            Tại FurEver, chúng tôi tin rằng mỗi thú cưng đều xứng đáng có một mái nhà yêu thương. Chúng tôi kết nối những người bạn bốn chân đáng yêu với những gia đình đang tìm kiếm một thành viên mới. Hãy khám phá những chú chó, chú mèo đang chờ đợi bạn và cảm nhận niềm vui khi mang một người bạn lông xù về nhà. Nhận nuôi không chỉ là cứu rỗi một sinh mạng, mà còn là mở rộng trái tim và mang lại hạnh phúc cho cả bạn và thú cưng. Hãy bắt đầu hành trình yêu thương của bạn ngay hôm nay!
+            Tại FurEver, chúng tôi tin rằng mỗi thú cưng đều xứng đáng có một
+            mái nhà yêu thương. Chúng tôi kết nối những người bạn bốn chân đáng
+            yêu với những gia đình đang tìm kiếm một thành viên mới. Hãy khám
+            phá những chú chó, chú mèo đang chờ đợi bạn và cảm nhận niềm vui khi
+            mang một người bạn lông xù về nhà. Nhận nuôi không chỉ là cứu rỗi
+            một sinh mạng, mà còn là mở rộng trái tim và mang lại hạnh phúc cho
+            cả bạn và thú cưng. Hãy bắt đầu hành trình yêu thương của bạn ngay
+            hôm nay!
           </p>
         </div>
         <div class="hero__action">
@@ -87,7 +94,8 @@
           </div>
         </div>
         <div class="hero__pagination">
-          <svg class="prev"
+          <svg
+            class="prev"
             xmlns="http://www.w3.org/2000/svg"
             width="15"
             height="26"
@@ -105,7 +113,7 @@
             <span></span>
           </div>
           <svg
-          class="next"
+            class="next"
             xmlns="http://www.w3.org/2000/svg"
             width="15"
             height="26"
@@ -537,7 +545,7 @@
         const nextButton = document.querySelector(".next");
         const dots = document.querySelectorAll(".dot span");
         let currentIndex = 0;
-        const slideInterval = 3000; 
+        const slideInterval = 3000;
 
         function showSlide(index) {
           slides.forEach((slide, i) => {
