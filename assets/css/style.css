@@ -164,10 +164,44 @@
   color: #e74f2c;
 }
 .header .user {
-  margin-left: 30.5px;
   display: none;
+  margin-left: 30.5px;
   align-items: center;
   gap: 12.5px;
+  position: relative;
+}
+.header .user:hover .user-dropdown {
+  display: block;
+}
+.header .user .user-dropdown {
+  width: 120%;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: 14px;
+  border: none;
+  background: #fff;
+  box-shadow: 0px 4px 11.3px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+  overflow: hidden;
+}
+.header .user-dropdown a {
+  display: block;
+  padding: 23px 27px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.22;
+}
+.header .user-dropdown a.logout {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.user-dropdown a:hover {
+  background-color: #f4b8a9;
 }
 .header .user .heading-h18 {
   color: #58546a;
@@ -176,23 +210,49 @@
 /* Hero content */
 .hero {
   padding-top: 106px;
-  background: linear-gradient(180deg, #b8b4c8 0%, #5a5862 100%);
   padding-bottom: 51px;
+  position: relative;
 }
 .hero__content {
   width: 39%;
+  margin-left: 10%;
 }
 .hero .heading-h54 {
   padding-top: 85px;
   padding-bottom: 39px;
 }
 .hero__action {
+  margin-left: 10%;
   margin-top: 71px;
   display: flex;
   gap: 27px;
+  align-items: center;
 }
 .hero__action .button {
   padding: 13.5px 19px;
+}
+/* Hero image */
+.hero__image-slider {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+.hero__image-slider .slides {
+  display: flex;
+  transition: 0.5s ease;
+}
+.hero__image-slider .slide {
+  min-width: 100%;
+  transition: 0.5s ease;
+}
+.hero__image-slider .slide img {
+  transform: translateY(-24%);
+  width: 100%;
+  display: block;
+  filter: brightness(0.5) contrast(1.2);
 }
 /* Hero pagination */
 .hero__pagination {
@@ -215,6 +275,7 @@
   background-color: #9994aa;
   border-radius: 10.717px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 .hero__pagination span:hover,
 .hero__pagination span.active {
@@ -1118,11 +1179,11 @@
   color: #000;
 }
 .interactions-counts .comments svg,
-.interactions-counts .likes svg {
-  width: 21px;
-  height: 21px;
+.interactions-counts .likes img {
+  width: 22px;
+  height: 22px;
 }
-.interactions-counts .likes svg {
+.interactions-counts .likes img {
   cursor: pointer;
 }
 /* Share */
@@ -1238,9 +1299,9 @@
   gap: 6px;
   color: #000;
 }
-.comment-actions .likes svg {
-  width: 19px;
-  height: 19px;
+.comment-actions .likes img {
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;

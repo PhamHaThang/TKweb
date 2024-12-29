@@ -40,14 +40,21 @@
           </div>
           <div class="nav-actions nav-right">
             <a href="/ung-ho" class="button button-secondary">Ủng hộ</a>
-            <div class="auth-links">
-              <a href="/dang-nhap">Đăng nhập</a>
+            <div class="auth-links" >
+              <a href="login.html">Đăng nhập</a>
               <span>/</span>
-              <a href="/dang-ky">Đăng ký</a>
+              <a href="signup.html">Đăng ký</a>
             </div>
-            <div class="user">
+            <div class="user" >
               <img src="./assets/img/user.svg" alt="" />
               <p class="heading-h18">Chức Nguyễn</p>
+              <div class="user-dropdown">
+                <a href="profile.html">Tài khoản của tôi</a>
+
+                <a href="index-logout.html" class="logout">
+                  <img src="/assets/img/logout.svg" alt="" />Đăng xuất</a
+                >
+              </div>
             </div>
           </div>
         </nav>
@@ -55,66 +62,61 @@
     </header>
     <main>
       <section class="hero">
-        <div class="content">
-          <div class="hero__content">
-            <h1 class="heading-h54">Viết tiêu đề gì ở đây bây giờ</h1>
-            <p class="paragraph-p3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              error, temporibus impedit pariatur quisquam id est aut quo iste
-              atque ipsam sit necessitatibus dolore nisi fugit nesciunt non rem
-              quidem! Exercitationem inventore quis quasi itaque, consectetur
-              amet placeat, perferendis expedita accusamus ipsa ut provident
-              eaque harum ea labore quibusdam sapiente dolores, adipisci
-              distinctio quas! Nesciunt sunt nemo ipsum dolorem error. Porro
-              eaque animi nemo in veniam a corrupti, accusamus dolorem fugiat
-              laudantium laborum, cupiditate sint delectus dignissimos, qui
-              corporis aut dicta quaerat. Eveniet, qui eius quibusdam numquam
-              assumenda porro voluptatum?
-            </p>
-          </div>
-          <div class="hero__action">
-            <a href="/ung-ho" class="button button-primary heading-h18"
-              >Ủng hộ</a
-            >
+        <div class="hero__content">
+          <h1 class="heading-h54">Bạn Đã Sẵn Sàng Cho Một Người Bạn Mới?</h1>
+          <p class="paragraph-p3">
+            Tại FurEver, chúng tôi tin rằng mỗi thú cưng đều xứng đáng có một mái nhà yêu thương. Chúng tôi kết nối những người bạn bốn chân đáng yêu với những gia đình đang tìm kiếm một thành viên mới. Hãy khám phá những chú chó, chú mèo đang chờ đợi bạn và cảm nhận niềm vui khi mang một người bạn lông xù về nhà. Nhận nuôi không chỉ là cứu rỗi một sinh mạng, mà còn là mở rộng trái tim và mang lại hạnh phúc cho cả bạn và thú cưng. Hãy bắt đầu hành trình yêu thương của bạn ngay hôm nay!
+          </p>
+        </div>
+        <div class="hero__action">
+          <a href="/ung-ho" class="button button-primary heading-h18">Ủng hộ</a>
 
-            <a href="/ve-chung-toi" class="button button-primary"
-              >Về chúng tôi</a
-            >
-          </div>
-          <div class="hero__image">
-            <!-- Image hero content -->
-          </div>
-          <div class="hero__pagination">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="26"
-              viewBox="0 0 15 26"
-              fill="none"
-            >
-              <path
-                d="M14.485 0.508832C14.3229 0.347539 14.1302 0.219571 13.9182 0.132258C13.7061 0.0449438 13.4787 0 13.2491 0C13.0195 0 12.7922 0.0449438 12.5801 0.132258C12.368 0.219571 12.1754 0.347539 12.0132 0.508832L0.408396 12.023C0.278936 12.1512 0.176228 12.3034 0.10615 12.471C0.0360717 12.6387 0 12.8183 0 12.9998C0 13.1813 0.0360717 13.361 0.10615 13.5286C0.176228 13.6962 0.278936 13.8485 0.408396 13.9766L12.0132 25.4908C12.6975 26.1697 13.8007 26.1697 14.485 25.4908C15.1693 24.8119 15.1693 23.7173 14.485 23.0383L4.37443 12.9929L14.499 2.94745C15.1693 2.28237 15.1693 1.17391 14.485 0.508832Z"
-                fill="currentColor"
-              />
-            </svg>
-            <div class="dot">
-              <span> </span>
-              <span class="active"></span>
-              <span></span>
+          <a href="about-us.html" class="button button-primary">Về chúng tôi</a>
+        </div>
+        <div class="hero__image-slider">
+          <div class="slides">
+            <div class="slide active">
+              <img src="./assets/img/slider1.png" alt="Slide 1" />
             </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15"
-              height="26"
-              viewBox="0 0 15 26"
-              fill="none"
-            >
-              <path
-                d="M0.51497 0.508832C0.677122 0.347539 0.869753 0.219571 1.08183 0.132258C1.2939 0.0449438 1.52126 0 1.75087 0C1.98047 0 2.20783 0.0449438 2.4199 0.132258C2.63198 0.219571 2.82461 0.347539 2.98676 0.508832L14.5916 12.023C14.7211 12.1512 14.8238 12.3034 14.8939 12.471C14.9639 12.6387 15 12.8183 15 12.9998C15 13.1813 14.9639 13.361 14.8939 13.5286C14.8238 13.6962 14.7211 13.8485 14.5916 13.9766L2.98676 25.4908C2.30248 26.1697 1.19925 26.1697 0.51497 25.4908C-0.169312 24.8119 -0.169312 23.7173 0.51497 23.0383L10.6256 12.9929L0.501007 2.94745C-0.169309 2.28237 -0.169312 1.17391 0.51497 0.508832Z"
-                fill="currentColor"
-              />
-            </svg>
+            <div class="slide">
+              <img src="./assets/img/slider2.png" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img src="./assets/img/slider3.png" alt="Slide 3" />
+            </div>
           </div>
+        </div>
+        <div class="hero__pagination">
+          <svg class="prev"
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="26"
+            viewBox="0 0 15 26"
+            fill="none"
+          >
+            <path
+              d="M14.485 0.508832C14.3229 0.347539 14.1302 0.219571 13.9182 0.132258C13.7061 0.0449438 13.4787 0 13.2491 0C13.0195 0 12.7922 0.0449438 12.5801 0.132258C12.368 0.219571 12.1754 0.347539 12.0132 0.508832L0.408396 12.023C0.278936 12.1512 0.176228 12.3034 0.10615 12.471C0.0360717 12.6387 0 12.8183 0 12.9998C0 13.1813 0.0360717 13.361 0.10615 13.5286C0.176228 13.6962 0.278936 13.8485 0.408396 13.9766L12.0132 25.4908C12.6975 26.1697 13.8007 26.1697 14.485 25.4908C15.1693 24.8119 15.1693 23.7173 14.485 23.0383L4.37443 12.9929L14.499 2.94745C15.1693 2.28237 15.1693 1.17391 14.485 0.508832Z"
+              fill="currentColor"
+            />
+          </svg>
+          <div class="dot">
+            <span class="active"> </span>
+            <span></span>
+            <span></span>
+          </div>
+          <svg
+          class="next"
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="26"
+            viewBox="0 0 15 26"
+            fill="none"
+          >
+            <path
+              d="M0.51497 0.508832C0.677122 0.347539 0.869753 0.219571 1.08183 0.132258C1.2939 0.0449438 1.52126 0 1.75087 0C1.98047 0 2.20783 0.0449438 2.4199 0.132258C2.63198 0.219571 2.82461 0.347539 2.98676 0.508832L14.5916 12.023C14.7211 12.1512 14.8238 12.3034 14.8939 12.471C14.9639 12.6387 15 12.8183 15 12.9998C15 13.1813 14.9639 13.361 14.8939 13.5286C14.8238 13.6962 14.7211 13.8485 14.5916 13.9766L2.98676 25.4908C2.30248 26.1697 1.19925 26.1697 0.51497 25.4908C-0.169312 24.8119 -0.169312 23.7173 0.51497 23.0383L10.6256 12.9929L0.501007 2.94745C-0.169309 2.28237 -0.169312 1.17391 0.51497 0.508832Z"
+              fill="currentColor"
+            />
+          </svg>
         </div>
       </section>
       <section class="adoption-intro">
@@ -420,11 +422,11 @@
         </div>
         <nav class="footer-nav">
           <ul>
-            <li><a href="/">Trang chủ</a></li>
+            <li><a href="index.html">Trang chủ</a></li>
             <li><a href="/nhan-nuoi">Nhận nuôi</a></li>
-            <li><a href="/tin-tuc">Tin tức</a></li>
+            <li><a href="news.html">Tin tức</a></li>
             <li><a href="/huong-dan">Hướng dẫn</a></li>
-            <li><a href="/ve-chung-toi">Về chúng tôi</a></li>
+            <li><a href="about-us.html">Về chúng tôi</a></li>
             <li><a href="/ung-ho">Ủng hộ</a></li>
           </ul>
         </nav>
@@ -528,5 +530,53 @@
     </div>
 
     <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".slide");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+        const dots = document.querySelectorAll(".dot span");
+        let currentIndex = 0;
+        const slideInterval = 3000; 
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.style.transform = `translateX(-${index * 100}%)`;
+            dots[i].classList.toggle("active", i === index);
+          });
+        }
+
+        function nextSlide() {
+          currentIndex =
+            currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+          showSlide(currentIndex);
+        }
+
+        if (prevButton) {
+          prevButton.addEventListener("click", function () {
+            currentIndex =
+              currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+            showSlide(currentIndex);
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener("click", function () {
+            currentIndex =
+              currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+            showSlide(currentIndex);
+          });
+        }
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", function () {
+            currentIndex = index;
+            showSlide(currentIndex);
+          });
+        });
+        showSlide(currentIndex);
+        setInterval(nextSlide, slideInterval);
+      });
+    </script>
   </body>
 </html>
