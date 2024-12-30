@@ -840,21 +840,24 @@
   height: 528px;
 }
 /* Why choose Furver */
-.why-choose-furever {
+.about-us {
   overflow: hidden;
+}
+.why-choose-furever {
   padding: 290px 0 169px;
   position: relative;
 }
 .why-choose-furever img {
   position: absolute;
   width: 50%;
-  top: 12%;
+  top: -10%;
   right: -12%;
 }
 .why-choose-furever .heading-h54 {
   color: #b53518;
   margin-left: 10%;
 }
+
 .reasons {
   margin-top: 60px;
   margin-left: 10%;
@@ -2744,4 +2747,234 @@
   color: #eae8f0;
   border: 1px solid #9994aa;
   background: #ff5b35;
+}
+/* Guide page */
+.guide .intro {
+  background: linear-gradient(90deg, #992207 22.4%, rgba(255, 91, 53, 0) 88.4%),
+    url(/assets/img/guide-intro.png) lightgray right / 79% no-repeat;
+}
+.guide .adoption-process {
+  padding: 77px;
+  margin-top: 140px;
+  margin-bottom: 144px;
+}
+
+.guide .adoption-process .heading-h40 {
+  color: #b53518;
+  margin-bottom: 114px;
+}
+
+.guide .slider-container {
+  margin: 0 auto;
+  max-width: 80%;
+  width: fit-content;
+  border-radius: 21px;
+  background: #ffffff;
+  box-shadow: 12px 14px 15.2px 10px rgba(0, 0, 0, 0.05);
+  padding: 77px 192px 99px;
+  overflow: hidden;
+}
+
+.guide .slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 756px;
+}
+
+.guide .slide {
+  opacity: 0.2;
+  transition: opacity 1.5s ease-in-out;
+  min-width: 100%;
+}
+.guide .slide.active {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+.guide .slide img {
+  width: 100%;
+  max-width: 756px;
+  height: 437px;
+  object-fit: cover;
+  margin-bottom: 31px;
+}
+.guide .slide-content {
+  width: 90%;
+  margin: 0 auto;
+}
+.guide .slide-content .heading-h32 {
+  margin-bottom: 19px;
+}
+
+.guide .slide-content .paragraph-p3 {
+  color: #000;
+}
+.guide .slider-bottom {
+  margin-top: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 74px;
+}
+.guide .dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 39px;
+}
+.guide .dots-container span {
+  width: 15px;
+  height: 15px;
+  background-color: #9994aa;
+  border-radius: 14.5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.guide .dots-container span:hover,
+.guide .dots-container span.active {
+  background-color: #fa7353;
+}
+
+.guide-document .heading-h40 {
+  color: #b53518;
+  margin-bottom: 40px;
+}
+
+.guide-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  justify-content: center;
+  row-gap: 40px;
+}
+.guide-card {
+  margin: 0 auto;
+  border-radius: 13px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #9994aa;
+  width: 185px;
+  height: 238px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.guide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 4px 18.4px 0px rgba(0, 0, 0, 0.15);
+}
+.guide-card img {
+  border-radius: 13px;
+  object-fit: cover;
+  width: 100%;
+}
+.guide-card .heading-h18 {
+  padding: 13px 17px 28px;
+}
+/* Faq */
+.faq-section {
+  margin-top: 106px;
+  width: 90%;
+}
+
+.faq-title {
+  color: #b53518;
+  margin-bottom: 67px;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-item {
+  margin-bottom: 26px;
+  border-bottom: 0.5px solid #9994aa;
+}
+
+.faq-checkbox {
+  display: none;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  color: #58546a;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  cursor: pointer;
+  padding: 15px 0;
+  transition: 0.1s;
+}
+.faq-question:hover{
+  color: #b53518;
+}
+.faq-question img {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  transition: 0.3s ease;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.faq-answer p {
+  margin-left: 37px;
+  padding-bottom: 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.faq-checkbox:checked ~ .faq-answer {
+  max-height: 500px;
+}
+
+.faq-checkbox:checked ~ .faq-question img {
+  transform: rotate(90deg);
+}
+
+/* Guide detail */
+.guide-detail .social-interactions {
+  display: flex;
+  justify-content: end;
+}
+.related-guide .heading-h40 {
+  color: #b53518;
+  margin-bottom: 98px;
+  text-align: center;
+}
+.related-guide .slider-container {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.related-guide .slider-container .slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 84px;
+}
+.related-guide .slider-container .slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.slider-container button.prev,
+.slider-container button.next {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #d9d9d9;
+}
+.slider-container button.prev :hover,
+.slider-container button.next:hover {
+  color: #fa7353;
 }
