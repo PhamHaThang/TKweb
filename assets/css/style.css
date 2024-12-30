@@ -1009,6 +1009,9 @@
 .news-card {
   margin: 0 auto;
   width: 90%;
+  max-width: 400px;
+  min-width: 258px;
+  text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
   border-radius: 16px;
@@ -1016,6 +1019,7 @@
   position: relative;
   border: 1px solid #9994aa;
   transition: 0.3s;
+
 }
 .news-card:hover {
   box-shadow: 1px 4px 18.4px 0px rgba(0, 0, 0, 0.15);
@@ -1357,16 +1361,18 @@
   display: flex;
   gap: 80px;
   align-items: center;
+  justify-content: center;
 }
 .related-news .slider-container .slider {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
   gap: 84px;
 }
 .related-news .slider-container .slide {
   width: 100%;
   display: flex;
-  flex-direction: column;
+    flex-direction: column;
 }
 .slider-container button.prev,
 .slider-container button.next {
@@ -2873,18 +2879,17 @@
 /* Faq */
 .faq-section {
   margin-top: 106px;
-  width: 90%;
 }
-
 .faq-title {
   color: #b53518;
   margin-bottom: 67px;
 }
 
 .faq-list {
+  width: 90%;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .faq-item {
