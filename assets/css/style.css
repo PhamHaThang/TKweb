@@ -377,12 +377,14 @@
   background: #fff;
   box-shadow: 8.864px 10.636px 20.475px 0px rgba(0, 0, 0, 0.1);
   padding: 100px 65px;
+  width: fit-content;
+  margin: 0 auto;
 }
 .featured-pets .pet-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 60px;
 }
 .pet-card {
   border-radius: 15px;
@@ -1719,29 +1721,20 @@
   margin-bottom: 149px;
   display: flex;
   gap: 10px;
+  justify-content: space-between;
   align-items: center;
 }
-.pet-container .relevant-button {
-  color: #7b778d;
-  background: transparent;
-  cursor: pointer;
-  padding: 10.5px 18px;
-  border-radius: 15px;
-  border: 1px solid #7b778d;
-  transition: 0.2s;
-}
-.pet-container .relevant-button:hover {
-  color: #eae8f0;
-  background-color: #ff5b35;
-}
+
 .pet-container .sort-options .paragraph-p3 {
   color: #000;
 }
 .custom-select {
   position: relative;
-  width: 200px; /* Điều chỉnh chiều rộng */
+  width: 200px;
 }
-
+.pet-container .sort-options .custom-select {
+  width: 20%;
+}
 .select-selected {
   background-color: #fff;
   color: #9994aa;
@@ -1803,13 +1796,14 @@
 .adoption-page .pet-container .pet-cards {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 68px 63px;
+  grid-template-columns: repeat(3, 30%);
+  gap: 68px 1%;
   justify-content: space-around;
   align-items: center;
 }
 .adoption-page .pet-container .pet-card {
   margin: 0 auto;
+  /* width: 100%; */
 }
 /* Adoption deatil page */
 .adoption-detail-page .intro {
@@ -2483,8 +2477,8 @@
   margin-top: 20px;
 }
 .payment-qr {
-  width: 40%;
   display: flex;
+  width: 45%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -2494,15 +2488,19 @@
   margin-bottom: 10px;
 }
 .payment-qr .qr-image {
+  width: 243px;
   object-fit: cover;
-  width: 100%;
   margin-bottom: 30px;
 }
 .payment-qr .payment-buttons {
   display: flex;
-  gap: 20px;
   align-items: center;
+  width: 100%;
   justify-content: center;
+  gap: 1%;
+}
+.payment-qr .payment-buttons .button {
+  padding: 15px 20px;
 }
 /* Adoption complete page */
 .adoption-complete-page .intro {
@@ -2526,7 +2524,6 @@
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
-  
 }
 .confirmation-message .heading-h32 {
   color: #b53518;
@@ -2559,4 +2556,192 @@
 }
 .confirmation-message .buttons .button {
   padding: 11px 30px;
+}
+/* Donate page */
+.donate-page .intro {
+  background: linear-gradient(90deg, #992207 22.4%, rgba(255, 91, 53, 0) 88.4%),
+    url(/assets/img/donate-intro.png) lightgray right / 79% no-repeat;
+}
+.donate-page .donation-form {
+  border-radius: 21px;
+  background: #ffffff;
+  box-shadow: 12px 14px 15.2px 10px rgba(0, 0, 0, 0.05);
+  width: fit-content;
+  margin-top: 16px;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 12%;
+  margin: 16px auto 0;
+}
+
+.donate-page .donation-form .heading-h22 {
+  color: #b53518;
+  margin-bottom: 41px;
+}
+
+.donate-page .input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+  width: 602px;
+  height: 65.407px;
+  padding: 23px 20px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+}
+.donate-page .input-group input {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  color: #7b778d;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  outline: none;
+}
+
+.donate-page .input-group .currency {
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  color: #58546a;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.donate-page .preset-amounts {
+  display: flex;
+  margin-bottom: 77px;
+  justify-content: space-between;
+}
+
+.donate-page .amount-button {
+  color: #58546a;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  width: 32%;
+  padding: 17px 10px;
+  border: 1px solid #9994aa;
+  border-radius: 9px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.donate-page .amount-button:hover {
+  background-color: #ff5b35;
+  color: #fff;
+}
+.donate-page .message-group {
+  margin-bottom: 20px;
+}
+
+.donate-page .message-group .heading-h22 {
+  color: #b53518;
+  display: block;
+}
+.donate-page .message-group .heading-h22 span {
+  color: #b53518;
+}
+.donate-page .message-group textarea {
+  width: 100%;
+  height: 234px;
+  padding: 20px;
+  border-radius: 9px;
+  border: 1px solid #9994aa;
+  background: #fff;
+  resize: vertical;
+}
+
+.donate-page .checkbox-group {
+  margin-bottom: 54px;
+}
+
+.donate-page .option-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.donate-page .continue-button {
+  display: flex;
+  width: 138px;
+  height: 46px;
+  padding: 16px 55px;
+  justify-content: center;
+  align-items: center;
+  color: #9994aa;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  border-radius: 15px;
+  border: 1px solid #9994aa;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+.donate-page .continue-button:hover {
+  color: #eae8f0;
+  background: #ff5b35;
+  opacity: 1;
+}
+/* Donate Step 2 */
+.donate-page .back-button {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #9994aa;
+  color: #9994aa;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  padding: 15px 30px;
+  transition: 0.2s;
+}
+.donate-page .back-button:hover {
+  color: #eae8f0;
+  border: 1px solid #9994aa;
+  background: #ff5b35;
+}
+.donate-page .share-donate {
+  margin-top: 46px;
+  margin-bottom: 67px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+.donate-page .share-donate .social-icon {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.donate-page .share-donate .social-icon img {
+  width: 23px;
+  height: 23px;
+}
+.donate-page .donate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+.donate-page .donate-button a {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #9994aa;
+  color: #9994aa;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  transition: 0.3s;
+}
+.donate-page .donate-button a:hover {
+  color: #eae8f0;
+  border: 1px solid #9994aa;
+  background: #ff5b35;
 }

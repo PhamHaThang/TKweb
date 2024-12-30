@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hoàn thành nhận nuôi</title>
+    <title>Ủng hộ bước 1</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -39,7 +39,7 @@
             </ul>
           </div>
           <div class="nav-actions nav-right">
-            <a href="donate.html" class="button button-secondary">Ủng hộ</a>
+            <a href="#" class="button button-secondary">Ủng hộ</a>
             <div class="auth-links">
               <a href="login.html">Đăng nhập</a>
               <span>/</span>
@@ -53,62 +53,77 @@
         </nav>
       </div>
     </header>
-    <main class="adoption-complete-page">
+    <main class="donate-page step-1">
       <section class="breadcrumb">
         <div class="content">
           <p class="paragraph-p3"><a href="index.html">Trang chủ</a></p>
           <p class="paragraph-p3">&gt;</p>
-          <p class="paragraph-p3"><a href="adoption.html">Nhận nuôi</a></p>
-          <p class="paragraph-p3">&gt;</p>
-          <p class="paragraph-p3">
-            <a href="adoption-detail.html">Thông tin vật nuôi</a>
-          </p>
-          <p class="paragraph-p3">&gt;</p>
-          <p class="paragraph-p3">Thực hiện nhận nuôi</p>
+          <p class="paragraph-p3">Ủng hộ</p>
         </div>
       </section>
       <section class="intro">
         <div class="content">
-          <h1 class="heading-h54">Thực hiện nhận nuôi</h1>
+          <h1 class="heading-h54">Ủng hộ</h1>
           <p class="paragraph-p3">
-            Bạn đã sẵn sàng đón bé về nhà? Hãy hoàn thành các bước dưới đây để
-            chính thức trở thành người chủ hạnh phúc của bé!
+            Chúng tôi cần sự giúp đỡ của bạn! Mọi đóng góp đều trực tiếp góp
+            phần chi trả các chi phí hoạt động của FurEver.
           </p>
         </div>
       </section>
       <div class="content">
-        <div class="confirmation-message">
-          <div class="success-icon">
-            <img
-              src="assets/img/tick-square2.svg"
-              alt=""
-              class="success-icon"
-            />
+        <div class="step-container">
+          <div class="steps">
+            <a href="#" class="step heading-h18 active">
+              <span class="step-order active">1 </span>Nhập số tiền
+            </a>
+            <a class="step heading-h18 unvisit">
+              <span class="step-order unvisit">2</span> Thanh toán
+            </a>
+            <a class="step heading-h18 unvisit">
+              <span class="step-order unvisit">3</span> Hoàn thiện
+            </a>
           </div>
-          <h2 class="heading-h32">Cảm ơn bạn đã nhận nuôi!</h2>
-          <p class="paragraph-p2">
-            Yêu cầu nhận nuôi đã được xác nhận thành công!
-          </p>
-          <div class="instructions">
-            <p class="paragraph-p4 instruction-left">Bạn vui lòng:</p>
-            <ul class="instruction-right">
-              <li class="paragraph-p4">
-                <img src="./assets/img/foot.svg" alt="" /> Chú ý điện thoại để
-                giữ liên lạc với FurEver
-              </li>
-              <li class="paragraph-p4">
-                <img src="./assets/img/foot.svg" alt="" /> Tham khảo các hướng
-                dẫn chăm sóc cho thú nuôi của bạn
-              </li>
-            </ul>
-          </div>
-          <div class="buttons">
-            <a href="guide.html" class="button button-primary guide-button"
-              >Xem hướng dẫn</a
-            >
-            <a href="index.html" class="button button-secondary home-button"
-              >Về trang chủ</a
-            >
+        </div>
+        <div class="content">
+          <div class="donation-form">
+            <h2 class="heading-h22">Chọn số tiền ủng hộ</h2>
+            <div class="input-group">
+              <input
+                type="text"
+                id="custom-amount"
+                placeholder="Nhập số tiền"
+              />
+              <span class="currency">VNĐ</span>
+            </div>
+            <div class="preset-amounts">
+              <button class="amount-button">200.000 VNĐ</button>
+              <button class="amount-button">500.000 VNĐ</button>
+              <button class="amount-button">1.000.000 VNĐ</button>
+            </div>
+            <div class="message-group">
+              <label for="message" class="heading-h22"
+                >Lời nhắn <span class="paragraph-p3">(nếu có)</span></label
+              >
+              <textarea id="message" placeholder="Nhập lời nhắn"></textarea>
+            </div>
+            <div class="checkbox-group">
+              <label class="option-container">
+                <input type="checkbox" name="species" value="cat" />
+                <span class="checkmark"></span>
+                Tôi muốn ủng hộ ẩn danh
+              </label>
+              <label class="option-container">
+                <input type="checkbox" name="species" value="cat" />
+                <span class="checkmark"></span>
+                <p>
+                  Tôi đã hiểu và đồng ý tuân theo
+                  <a href="#" style="font-weight: 700; font-style: italic"
+                    >Điều khoản FurEver</a
+                  >
+                </p>
+              </label>
+            </div>
+            <a href="donate-step-2.html" class="continue-button">Tiếp</a>
           </div>
         </div>
       </div>
@@ -127,12 +142,12 @@
         </div>
         <nav class="footer-nav">
           <ul>
-            <li><a href="/">Trang chủ</a></li>
+            <li><a href="index.html">Trang chủ</a></li>
             <li><a href="adoption.html">Nhận nuôi</a></li>
-            <li><a href="/tin-tuc">Tin tức</a></li>
-            <li><a href="/huong-dan">Hướng dẫn</a></li>
-            <li><a href="/ve-chung-toi">Về chúng tôi</a></li>
-            <li><a href="donate.html">Ủng hộ</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="guide.html">Hướng dẫn</a></li>
+            <li><a href="about-us.html">Về chúng tôi</a></li>
+            <li><a href="#">Ủng hộ</a></li>
           </ul>
         </nav>
         <div class="footer-contact">
@@ -234,6 +249,58 @@
       </a>
     </div>
     <script src="index.js"></script>
-    <script></script>
+    <script>
+      // Select
+      const stepDetail = document.querySelector(".step-detail");
+      const directAddress = document.querySelector(".adoption-address.direct");
+      const deliveryAddress = document.querySelector(
+        ".adoption-address.delivery"
+      );
+      const adoptionFeeDisplay = document.getElementById(
+        "adoption-fee-display"
+      );
+      const customSelects = document.querySelectorAll(".custom-select");
+      customSelects.forEach((customSelect) => {
+        const selectSelected = customSelect.querySelector(".select-selected");
+        const selectItems = customSelect.querySelector(".select-items");
+        const selectItemList = customSelect.querySelectorAll(".select-item");
+        // Mở/đóng danh sách tùy chọn
+        selectSelected.addEventListener("click", function () {
+          selectItems.style.opacity =
+            selectItems.style.opacity === "1" ? "0" : "1";
+          selectSelected.classList.toggle("select-arrow-active");
+        });
+
+        // Xử lý khi chọn một tùy chọn
+        selectItemList.forEach((item) => {
+          item.addEventListener("click", function () {
+            selectSelected.innerHTML = this.innerHTML;
+            selectItems.style.opacity = "0";
+            selectSelected.classList.remove("select-arrow-active");
+            selectSelected.style.padding = "20px 60px 24px 34px";
+            const selectedValue = this.dataset.value;
+            console.log("Selected value:", selectedValue);
+            if (selectedValue === "direct") {
+              directAddress.style.display = "block";
+              deliveryAddress.style.display = "none";
+              stepDetail.style.paddingBottom = "50px";
+              adoptionFeeDisplay.innerText = "0 VND";
+            } else if (selectedValue === "delivery") {
+              stepDetail.style.paddingBottom = "50px";
+              directAddress.style.display = "none";
+              deliveryAddress.style.display = "block";
+              adoptionFeeDisplay.innerText = "25.000 VND";
+            }
+          });
+        });
+        // Đóng danh sách khi click ra ngoài
+        document.addEventListener("click", function (event) {
+          if (!customSelect.contains(event.target)) {
+            selectItems.style.opacity = "0";
+            selectSelected.classList.remove("select-arrow-active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

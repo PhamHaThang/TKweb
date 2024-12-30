@@ -27,19 +27,19 @@
               <img
                 src="./assets/img/logo.svg"
                 alt="FurEver Logo"
-                class="ogo-image"
+                class="logo-image"
               />
             </a>
             <ul class="nav-links">
               <li><a href="index.html">Trang chủ</a></li>
               <li><a href="#" class="active">Nhận nuôi</a></li>
               <li><a href="news.html">Tin tức</a></li>
-              <li><a href="/huong-dan">Hướng dẫn</a></li>
+              <li><a href="guide.html">Hướng dẫn</a></li>
               <li><a href="about-us.html">Về chúng tôi</a></li>
             </ul>
           </div>
           <div class="nav-actions nav-right">
-            <a href="/ung-ho" class="button button-secondary">Ủng hộ</a>
+            <a href="donate.html" class="button button-secondary">Ủng hộ</a>
             <div class="auth-links">
               <a href="login.html">Đăng nhập</a>
               <span>/</span>
@@ -252,430 +252,388 @@
           </form>
         </div>
       </div>
-      <div class="pet-lists">
-        <div class="content">
-          <div class="results-header hidden">
-            <p class="paragraph-p3">
-              Tìm thấy <span class="results-count">34</span> kết quả cho từ khóa
-              <span class="search-keyword">'chó poddle'</span>
-            </p>
+      <div class="pet-lists content">
+        <div class="results-header hidden">
+          <p class="paragraph-p3">
+            Tìm thấy <span class="results-count">34</span> kết quả cho từ khóa
+            <span class="search-keyword">'chó poddle'</span>
+          </p>
+        </div>
+        <div class="pet-container">
+          <div class="sort-options">
+            <label for="sort-by" class="paragraph-p3">Sắp xếp theo</label>
+           
+            <div class="custom-select">
+              <div class="select-selected">Ngày cứu trợ</div>
+              <div class="select-items">
+                <div class="select-item" data-value="low-to-high">Cũ nhất</div>
+                <div class="select-item" data-value="high-to-low">Mới nhất</div>
+              </div>
+            </div>
+            <div class="custom-select">
+              <div class="select-selected">Thứ tự chữ cái</div>
+              <div class="select-items">
+                <div class="select-item" data-value="low-to-high">A-Z</div>
+                <div class="select-item" data-value="high-to-low">Z-A</div>
+              </div>
+            </div>
+            <div class="custom-select">
+              <div class="select-selected">Tuổi</div>
+              <div class="select-items">
+                <div class="select-item" data-value="low-to-high">
+                  Nhỏ đến Lớn
+                </div>
+                <div class="select-item" data-value="high-to-low">
+                  Lớn đến Nhỏ
+                </div>
+              </div>
+            </div>
+            <div class="custom-select">
+              <div class="select-selected">Phí nhận nuôi</div>
+              <div class="select-items">
+                <div class="select-item" data-value="low-to-high">
+                  Thấp đến Cao
+                </div>
+                <div class="select-item" data-value="high-to-low">
+                  Cao đến Thấp
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="pet-container">
-            <div class="sort-options">
-              <label for="sort-by" class="paragraph-p3">Sắp xếp theo</label>
-              <button class="relevant-button heading-h18">Liên quan</button>
-              <div class="custom-select">
-                <div class="select-selected">Ngày cứu trợ</div>
-                <div class="select-items">
-                  <div class="select-item" data-value="low-to-high">
-                    Cũ nhất
-                  </div>
-                  <div class="select-item" data-value="high-to-low">
-                    Mới nhất
-                  </div>
-                </div>
+          <div class="pet-cards">
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
               </div>
-              <div class="custom-select">
-                <div class="select-selected">Thứ tự chữ cái</div>
-                <div class="select-items">
-                  <div class="select-item" data-value="low-to-high">A-Z</div>
-                  <div class="select-item" data-value="high-to-low">Z-A</div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
+                </div>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
               </div>
-              <div class="custom-select">
-                <div class="select-selected">Tuổi</div>
-                <div class="select-items">
-                  <div class="select-item" data-value="low-to-high">
-                    Nhỏ đến Lớn
-                  </div>
-                  <div class="select-item" data-value="high-to-low">
-                    Lớn đến Nhỏ
-                  </div>
-                </div>
+            </a>
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
               </div>
-              <div class="custom-select">
-                <div class="select-selected">Phí nhận nuôi</div>
-                <div class="select-items">
-                  <div class="select-item" data-value="low-to-high">
-                    Thấp đến Cao
-                  </div>
-                  <div class="select-item" data-value="high-to-low">
-                    Cao đến Thấp
-                  </div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
+                </div>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
               </div>
-            </div>
-            <div class="pet-cards">
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
+            </a>
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
+              </div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
                 </div>
-              </a>
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
+              </div>
+            </a>
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
+              </div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
                 </div>
-              </a>
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
+              </div>
+            </a>
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
+              </div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
                 </div>
-              </a>
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
+              </div>
+            </a>
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
+              </div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
                 </div>
-              </a>
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
+              </div>
+            </a>
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
+              </div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
                 </div>
-              </a>
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
+              </div>
+            </a>
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
+              </div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
                 </div>
-              </a>
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
+              </div>
+            </a>
+            <a class="pet-card" href="adoption-detail.html">
+              <img src="./assets/img/pet-ellipse1.svg" alt="Susu" class="pet" />
+              <div class="card-name">
+                <img src="./assets/img/dog-icon-small.svg" alt="" />
+                <h3 class="heading-h22">Susu</h3>
+              </div>
+              <div class="card-infos">
+                <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="161"
+                  height="2"
+                  viewBox="0 0 161 2"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1H160"
+                    stroke="#9994AA"
+                    stroke-width="0.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
+                  <img src="./assets/img/x-icon.svg" alt="" />
                 </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <div class="card-info">
+                  <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
+                  <img src="./assets/img/tick-icon.svg" alt="" />
                 </div>
-              </a>
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
-                </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
-                </div>
-              </a>
-              <a class="pet-card" href="adoption-detail.html"> 
-                <img
-                  src="./assets/img/pet-ellipse1.svg"
-                  alt="Susu"
-                  class="pet"
-                />
-                <div class="card-name">
-                  <img src="./assets/img/dog-icon-small.svg" alt="" />
-                  <h3 class="heading-h22">Susu</h3>
-                </div>
-                <div class="card-infos">
-                  <p class="paragraph-p4"><strong>Giới tính: </strong>Cái</p>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="161"
-                    height="2"
-                    viewBox="0 0 161 2"
-                    fill="none"
-                  >
-                    <path
-                      d="M1 1H160"
-                      stroke="#9994AA"
-                      stroke-width="0.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <p class="paragraph-p4"><strong>Tuổi:</strong> 5 tháng</p>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Tiêm phòng:</strong></p>
-                    <img src="./assets/img/x-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <div class="card-info">
-                    <p class="paragraph-p4"><strong>Triệt sản:</strong></p>
-                    <img src="./assets/img/tick-icon.svg" alt="" />
-                  </div>
-                  <img src="./assets/img/divider.svg" alt="" class="divider" />
-                  <p><strong>Giống:</strong> Poodle</p>
-                </div>
-              </a>
-            </div>
+                <img src="./assets/img/divider.svg" alt="" class="divider" />
+                <p><strong>Giống:</strong> Poodle</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -717,7 +675,7 @@
             <li><a href="/tin-tuc">Tin tức</a></li>
             <li><a href="/huong-dan">Hướng dẫn</a></li>
             <li><a href="/ve-chung-toi">Về chúng tôi</a></li>
-            <li><a href="/ung-ho">Ủng hộ</a></li>
+            <li><a href="donate.html">Ủng hộ</a></li>
           </ul>
         </nav>
         <div class="footer-contact">
