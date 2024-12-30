@@ -2145,6 +2145,7 @@
   padding: 40px 40px 44px 34px;
   cursor: pointer;
   user-select: none;
+  
 }
 .step-detail .adoption-method .select-selected .option-select {
   color: #9994aa;
@@ -2174,7 +2175,6 @@
   border-radius: 8.571px;
   border: 0.714px solid #d2d0df;
   z-index: 10;
-  opacity: 0;
   color: #363344;
   font-size: 12.857px;
   font-weight: 400;

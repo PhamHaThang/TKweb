@@ -19,7 +19,7 @@
       <div class="content">
         <nav class="main-nav">
           <div class="nav-left">
-            <a href="index.html" class="logo">
+            <a href="#" class="logo">
               <img
                 src="assets/img/logo.svg"
                 alt="FurEver Logo"
@@ -27,8 +27,8 @@
               />
             </a>
             <ul class="nav-links">
-              <li><a href="index.html">Trang chủ</a></li>
-              <li><a href="adoption.html" class="active">Nhận nuôi</a></li>
+              <li><a href="#" class="active">Trang chủ</a></li>
+              <li><a href="adoption.html">Nhận nuôi</a></li>
               <li><a href="news.html">Tin tức</a></li>
               <li><a href="guide.html">Hướng dẫn</a></li>
               <li><a href="about-us.html">Về chúng tôi</a></li>
@@ -44,6 +44,13 @@
             <div class="user">
               <img src="assets/img/user.svg" alt="" />
               <p class="heading-h18">Chức Nguyễn</p>
+              <div class="user-dropdown">
+                <a href="profile.html">Tài khoản của tôi</a>
+
+                <a href="index-logout.html" class="logout">
+                  <img src="assets/img/logout.svg" alt="" />Đăng xuất</a
+                >
+              </div>
             </div>
           </div>
         </nav>
@@ -208,7 +215,11 @@
                 <img src="assets/img/location1.svg" alt="" /> Địa chỉ nhận thú
                 nuôi
 
-                <span class="edit-button">
+                <span
+                  class="edit-button"
+                  id="edit-button"
+                  onclick="showEditForm()"
+                >
                   <svg
                     width="18"
                     height="18"
@@ -248,11 +259,14 @@
                 </p>
               </div>
             </div>
-            <a href="adoption-step-2.html" class="continue-container"
-              ><button class="button button-primary continue-button">
+            <div class="continue-container">
+              <a
+                href="adoption-step-2.html"
+                class="button button-primary continue-button"
+              >
                 Tiếp tục
-              </button></a
-            >
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -414,22 +428,24 @@
         // Xử lý khi chọn một tùy chọn
         selectItemList.forEach((item) => {
           item.addEventListener("click", function () {
-            selectSelected.innerHTML = this.innerHTML;
-            selectItems.style.opacity = "0";
-            selectSelected.classList.remove("select-arrow-active");
-            selectSelected.style.padding = "20px 60px 24px 34px";
-            const selectedValue = this.dataset.value;
-            console.log("Selected value:", selectedValue);
-            if (selectedValue === "direct") {
-              directAddress.style.display = "block";
-              deliveryAddress.style.display = "none";
-              stepDetail.style.paddingBottom = "50px";
-              adoptionFeeDisplay.innerText = "0 VND";
-            } else if (selectedValue === "delivery") {
-              stepDetail.style.paddingBottom = "50px";
-              directAddress.style.display = "none";
-              deliveryAddress.style.display = "block";
-              adoptionFeeDisplay.innerText = "25.000 VND";
+            if (selectItems.style.opacity === "1") {
+              selectSelected.innerHTML = this.innerHTML;
+              selectItems.style.opacity = "0";
+              selectSelected.classList.remove("select-arrow-active");
+              selectSelected.style.padding = "20px 60px 24px 34px";
+              const selectedValue = this.dataset.value;
+              console.log("Selected value:", selectedValue);
+              if (selectedValue === "direct") {
+                directAddress.style.display = "block";
+                deliveryAddress.style.display = "none";
+                stepDetail.style.paddingBottom = "50px";
+                adoptionFeeDisplay.innerText = "0 VND";
+              } else if (selectedValue === "delivery") {
+                stepDetail.style.paddingBottom = "50px";
+                directAddress.style.display = "none";
+                deliveryAddress.style.display = "block";
+                adoptionFeeDisplay.innerText = "25.000 VND";
+              }
             }
           });
         });

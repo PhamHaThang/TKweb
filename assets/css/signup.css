@@ -74,7 +74,7 @@ main.sign-up {
   height: 46px;
   margin-bottom: 22px;
   padding: 14px 0 14px 17px;
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .signup-surname_title {
@@ -93,7 +93,7 @@ main.sign-up {
   width: 100%;
   height: 46px;
   margin-bottom: 22px;
-  background-color: transparent;
+  background-color: #fff;
   padding: 14px 0 14px 17px;
 }
 
@@ -174,7 +174,7 @@ main.sign-up {
   height: 20px;
   aspect-ratio: 1/1;
   border-radius: 4px;
-  background-color: transparent;
+  background-color: #fff;
   position: relative;
 }
 
