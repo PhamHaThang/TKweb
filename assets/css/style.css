@@ -528,8 +528,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  left: -140px;
-  top: 200px;
+  left: -10%;
+  top: 15%;
   background-image: url(/assets/img/footprint.svg);
   transform: rotate(17.524deg);
   background-repeat: no-repeat;
@@ -541,8 +541,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 630px;
-  top: 800px;
+  left: 40%;
+  top: 65%;
   background-image: url(/assets/img/footprint2.svg);
   transform: rotate(20.512deg);
   background-repeat: no-repeat;
@@ -644,6 +644,7 @@
   padding-top: 76px;
   padding-bottom: 133px;
 }
+
 .footer .content {
   display: flex;
   justify-content: space-between;
@@ -663,6 +664,7 @@
 .footer-nav {
   width: 24%;
 }
+
 .footer-nav ul {
   display: flex;
   flex-direction: column;
@@ -843,6 +845,7 @@
 }
 .why-choose-furever img {
   position: absolute;
+  width: 50%;
   top: 12%;
   right: -12%;
 }
@@ -993,7 +996,7 @@
 /* New card */
 .news-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 25%);
   grid-template-rows: repeat(3, 1fr);
   gap: 90px 71px;
   justify-content: center;
@@ -1914,17 +1917,17 @@
   cursor: pointer;
 }
 /* pet description */
-.pet-description{
+.pet-description {
   margin-top: 150px;
   margin-bottom: 47px;
   margin-left: 5%;
 }
-.pet-description .heading-h32{
-  color: #B53518;
+.pet-description .heading-h32 {
+  color: #b53518;
   position: relative;
   margin-bottom: 27px;
 }
-.pet-description .heading-h32::after{
+.pet-description .heading-h32::after {
   content: "";
   width: 80%;
   position: absolute;
@@ -1932,7 +1935,7 @@
   left: 0;
   border: 0.5px solid #9994aa3c;
 }
-.pet-description .paragraph-p3{
+.pet-description .paragraph-p3 {
   width: 80%;
   color: #000;
 }
@@ -1940,12 +1943,12 @@
 .adopter-requirements {
   margin-left: 5%;
 }
-.adopter-requirements .heading-h32{
-  color: #B53518;
+.adopter-requirements .heading-h32 {
+  color: #b53518;
   position: relative;
   margin-bottom: 27px;
 }
-.adopter-requirements .heading-h32::after{
+.adopter-requirements .heading-h32::after {
   content: "";
   width: 80%;
   position: absolute;
@@ -1953,7 +1956,7 @@
   left: 0;
   border: 0.5px solid #9994aa3c;
 }
-.adopter-requirements .paragraph-p3{
+.adopter-requirements .paragraph-p3 {
   width: 80%;
   color: #000;
   list-style: disc;
@@ -1977,4 +1980,583 @@
   align-items: center;
   justify-content: center;
   gap: 71px;
+}
+/* Adoption step page */
+.adoption-step-page .intro {
+  background: linear-gradient(90deg, #992207 22.4%, rgba(255, 91, 53, 0) 88.4%),
+    url(/assets/img/adoption-intro.png) lightgray right / 79% no-repeat;
+}
+
+/* Step */
+.steps {
+  margin-top: 105px;
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  justify-content: center;
+}
+.steps .step {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.steps .step.active {
+  color: #b53518;
+}
+.steps .step.unvisit {
+  color: #7b778d;
+}
+.steps .step.visited {
+  color: #f0937d;
+}
+.steps .step .step-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+}
+.steps .step .step-order.active {
+  color: #992207;
+  background-color: #f0937d;
+}
+.steps .step .step-order.unvisit {
+  color: #58546a;
+  background-color: #d2d0df;
+}
+.steps .step .step-order.visited {
+  color: #f0937d;
+  background-color: #fadcd5;
+}
+/* Step detail */
+.step-detail {
+  padding-bottom: 50px;
+  width: 80%;
+  margin: 47px auto 0;
+  padding-top: 53px;
+  border-radius: 21px;
+  background: #ffffff;
+  box-shadow: 12px 14px 15.2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Adoption info */
+.adoption-info-top {
+  padding-left: 96px;
+  padding-right: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.step-detail .pet-description {
+  padding-left: 96px;
+  padding-right: 96px;
+  margin-top: 49px;
+  margin-bottom: 38px;
+  margin-left: 0%;
+}
+.step-detail .pet-description .heading-h18 {
+  color: #000000;
+  position: relative;
+  margin-bottom: 18px;
+}
+.step-detail .pet-description .heading-h18::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  border: 0.5px solid #9994aa3c;
+}
+.step-detail .pet-description .paragraph-p4 {
+  width: 100%;
+  color: #000;
+}
+.step-detail .adopter-requirements {
+  padding-left: 96px;
+  padding-right: 96px;
+  margin-left: 0%;
+}
+.step-detail .adopter-requirements .heading-h18 {
+  color: #000000;
+  position: relative;
+  margin-bottom: 18px;
+}
+.step-detail .adopter-requirements .heading-h18::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  border: 0.5px solid #9994aa3c;
+}
+.step-detail .adopter-requirements .paragraph-p4 {
+  width: 80%;
+  color: #000;
+  list-style: disc;
+  margin-left: 2%;
+}
+/* Adoption Method */
+
+.step-detail .adoption-method {
+  margin-top: 59px;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-bottom: 59px;
+  align-items: start;
+  background-color: #ffefec;
+  border-radius: 6px 6px 0 0;
+}
+.step-detail .adoption-method-right {
+  flex-grow: 1;
+  display: flex;
+  gap: 58px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: end;
+}
+.step-detail .fee-adoption.heading-h18 {
+  color: #000;
+  width: 15%;
+}
+.step-detail .adoption-method h3.heading-h18 {
+  color: #b53518;
+}
+.step-detail .heading-h22 {
+  margin-left: 96px;
+  color: #b53518;
+  margin-bottom: 35px;
+}
+
+.step-detail .adoption-method .custom-select {
+  position: relative;
+  width: 401px;
+  height: 103px;
+}
+
+.step-detail .adoption-method .select-selected {
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1.429px solid #f0937d;
+  padding: 40px 40px 44px 34px;
+  cursor: pointer;
+  user-select: none;
+}
+.step-detail .adoption-method .select-selected .option-select {
+  color: #9994aa;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.step-detail .adoption-method .select-selected:after {
+  content: url("/assets/img/arrow-down.svg");
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  width: 23px;
+  height: 23px;
+  transition: transform 0.2s ease;
+}
+
+.step-detail .adoption-method .select-selected.select-arrow-active:after {
+  transform: translateX(-5px) rotate(90deg);
+}
+.step-detail .adoption-method .select-items {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 8.571px;
+  border: 0.714px solid #d2d0df;
+  z-index: 10;
+  opacity: 0;
+  color: #363344;
+  font-size: 12.857px;
+  font-weight: 400;
+  line-height: 18.571px;
+  transition: 0.3s;
+  padding: 17px 17px 0;
+}
+
+.step-detail .adoption-method .select-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 13px;
+}
+.step-detail .adoption-method .select-selected .title-select,
+.step-detail .adoption-method .select-item .title-select {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.step-detail .adoption-method .select-selected .description-select,
+.step-detail .adoption-method .select-item .description-select {
+  color: #000;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 17px;
+}
+.step-detail .adoption-method .select-item:hover {
+  background-color: #f4b8a9;
+}
+/* Adoption adress */
+.adoption-address {
+  padding-left: 96px;
+  padding-top: 28px;
+  padding-right: 96px;
+  padding-bottom: 60px;
+  background-color: #ffefec;
+  border-radius: 0 0 6px 6px;
+  position: relative;
+}
+.adoption-address::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0.5px solid #9994aa3c;
+}
+.adoption-address .heading-h18 {
+  display: flex;
+  color: #b53518;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.adoption-address .address-details {
+  display: flex;
+  align-items: start;
+}
+.adoption-address .address-details .address-name {
+  color: #000;
+}
+.adoption-address .address-details .address-location {
+  max-width: 33%;
+  color: #58546a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 auto;
+}
+.adoption-address .address-details .address-location strong {
+  font-weight: 700;
+}
+.adoption-address.delivery {
+  padding-bottom: 83px;
+}
+.adoption-address.delivery .heading-h18 .edit-button {
+  color: #58546a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  transition: 0.1s;
+}
+.adoption-address.delivery .heading-h18 .edit-button:hover {
+  color: #e74f2c;
+}
+.adoption-address.direct {
+  display: none;
+}
+.adoption-address.delivery {
+  display: none;
+}
+.step-detail .continue-container {
+  display: flex;
+  padding: 50px 96px 0;
+  justify-content: end;
+}
+/* Step 2 */
+/* Confirmation */
+.step-container .confirmation-container {
+  padding: 95px 95px 37px 95px;
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 12px 14px 15.2px 10px rgba(0, 0, 0, 0.05);
+  margin: 31px auto 41px;
+  width: 80%;
+  position: relative;
+}
+.step-container .confirmation-title {
+  color: #b53518;
+  margin-bottom: 11px;
+}
+
+.step-container .confirmation-code {
+  position: absolute;
+  color: #7b778d;
+  top: 35px;
+  right: 96px;
+  text-transform: uppercase;
+}
+
+.step-container .confirmation-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.step-container .location-info,
+.step-container .time-info {
+  width: 40%;
+}
+.step-container .location-info .location-address,
+.step-container .location-info .location-phone {
+  margin-bottom: 11px;
+}
+.step-container .location-info .location-address {
+  width: 90%;
+  color: #58546a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.step-container .opening-hours {
+  color: #58546a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.step-container .opening-hours strong {
+  font-weight: 700;
+}
+
+.step-container .confirmation-footer {
+  border-top: 1px solid #9994aa;
+  padding-top: 50px;
+}
+.step-container .confirmation-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.step-container .confirmation-note {
+  width: 40%;
+  color: #7b778d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.step-container .confirmation-note a {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+}
+.step-container .confirmation-note a:hover {
+  text-decoration: underline;
+}
+.step-container .confirmation-buttons {
+  display: flex;
+  gap: 21px;
+}
+.step-container .back-button {
+  background-color: transparent;
+}
+
+.step-container .back-button:hover {
+  background: #ff5b35;
+  color: #eae8f0;
+}
+
+.step-container .time-info .heading-h18 {
+  color: #e74f2c;
+  margin-bottom: 10px;
+}
+.step-container .time-info .paragraph-p4 {
+  width: 90%;
+}
+.step-container .time-info .paragraph-p4 strong {
+  font-weight: 700;
+}
+.step-container .time-info .paragraph-p4 em {
+  font-style: italic;
+}
+/* payment summary */
+.payment-summary {
+  width: 80%;
+  margin: 26px auto 0;
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 12px 14px 15.2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.payment-method-label {
+  padding-bottom: 40px;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 43px;
+  display: flex;
+  margin-bottom: 5px;
+}
+.payment-method-label .label-left {
+  color: #b53518;
+}
+.payment-method-label .payment-left,
+.payment-method-label .payment-right {
+  width: 50%;
+}
+.payment-method-label .payment-left .divider {
+  margin-top: 24px;
+  border: 0.5px solid #9994aa3c;
+}
+.payment-method-label .payment-right .divider {
+  border: 0.5px solid #9994aa3c;
+  margin-top: -40px;
+}
+.payment-method-label .label-right {
+  font-weight: 700;
+  margin-bottom: 66px;
+}
+.payment-info {
+  margin-top: 41px;
+}
+.payment-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.payment-detail .paragraph-p4 em {
+  font-style: italic;
+}
+.payment-total {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-total .paragraph-p4 {
+  color: #b53518;
+  font-weight: 700;
+}
+.payment-total .heading-h22 {
+  color: #b53518;
+}
+/* Step 3 */
+/* Payment guide */
+.payment-guide {
+  width: 80%;
+  margin: 45px auto 0;
+  display: flex;
+  padding: 75px 10% 108px;
+  justify-content: space-between;
+  border-radius: 21px;
+  background: #fff;
+
+  box-shadow: 12px 14px 15.2px 10px rgba(0, 0, 0, 0.05);
+}
+.payment-instructions {
+  width: 45%;
+}
+.payment-instructions .paragraph-p4 {
+  margin-bottom: 5px;
+}
+.payment-instructions .paragraph-p4 .note-import {
+  font-weight: 700;
+  font-style: italic;
+}
+.payment-instructions .paragraph-p4.title {
+  margin-bottom: 9px;
+}
+.payment-instructions .paragraph-p4 strong {
+  font-weight: 700;
+}
+.payment-instructions .heading-h22 {
+  color: #b53518;
+  padding-bottom: 6px;
+  border-bottom: 0.5px solid #9994aa;
+  margin-bottom: 25px;
+}
+.payment-instructions-method {
+  margin-bottom: 29px;
+}
+.payment-instructions-method.account {
+  border-bottom: 0.5px solid #9994aa;
+  padding-bottom: 27px;
+  margin-top: 20px;
+}
+.payment-qr {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.payment-qr .heading-h18 {
+  color: #b53518;
+  margin-bottom: 10px;
+}
+.payment-qr .qr-image {
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.payment-qr .payment-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+/* Adoption complete page */
+.adoption-complete-page .intro {
+  background: linear-gradient(90deg, #992207 22.4%, rgba(255, 91, 53, 0) 88.4%),
+    url(/assets/img/adoption-intro.png) lightgray right / 79% no-repeat;
+}
+
+.confirmation-message {
+  width: 65%;
+  margin: 108px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 53px 195px 97px;
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 12px 14px 15.2px 10px rgba(0, 0, 0, 0.05);
+}
+.confirmation-message .success-icon {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+.confirmation-message .heading-h32 {
+  color: #b53518;
+  margin-bottom: 10px;
+}
+.confirmation-message .paragraph-p2 {
+  margin-bottom: 26px;
+}
+.confirmation-message .instructions {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 55px;
+}
+.confirmation-message .instruction-left {
+  width: 20%;
+}
+.confirmation-message .instruction-right {
+  width: 60%;
+}
+.confirmation-message .instruction-right li {
+  display: flex;
+  align-items: start;
+  gap: 9px;
+}
+.confirmation-message .buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.confirmation-message .buttons .button {
+  padding: 11px 30px;
 }
