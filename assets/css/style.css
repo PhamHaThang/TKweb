@@ -280,10 +280,12 @@
 }
 .hero__pagination span:hover,
 .hero__pagination span.active {
-  background-color: #d9d9d9;
+  background-color: #fd7759de;
 }
 .hero__pagination svg {
+  cursor: pointer;
   color: #f4b8a9;
+  transition: 0.1s;
 }
 .hero__pagination svg:hover {
   color: #ff5b35;
@@ -2665,7 +2667,7 @@
   outline: none;
   transform: 0.3s;
 }
-.donate-page .message-group textarea:focus{
+.donate-page .message-group textarea:focus {
   border-color: #ff6600;
   box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
 }
@@ -2718,7 +2720,7 @@
   border: 1px solid #9994aa;
   background: #ff5b35;
 }
-.donate-page  .confirmation-message{
+.donate-page .confirmation-message {
   width: fit-content;
 }
 .donate-page .share-donate {
@@ -3692,16 +3694,16 @@
   width: 443px;
   margin: 0 auto;
 }
-.overlay{
+.overlay {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100; animation: fadeIn 0.3s ease;
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
   background: rgba(0, 0, 0, 0.5);
-
 }
 .popup-forget {
   position: absolute;
