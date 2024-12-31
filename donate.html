@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ủng hộ bước 1</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/favicon_io/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -103,9 +99,14 @@
               <span class="currency">VNĐ</span>
             </div>
             <div class="preset-amounts">
-              <button class="amount-button">200.000 VNĐ</button>
-              <button class="amount-button">500.000 VNĐ</button>
-              <button class="amount-button">1.000.000 VNĐ</button>
+              <button
+                class="amount-button"
+                onclick="setDonationAmount('200.000')"
+              >
+                200.000 VNĐ
+              </button>
+              <button class="amount-button" onclick="setDonationAmount('500.000')">500.000 VNĐ</button>
+              <button class="amount-button" onclick="setDonationAmount('1.000.000')">1.000.000 VNĐ</button>
             </div>
             <div class="message-group">
               <label for="message" class="heading-h22"
@@ -257,6 +258,10 @@
     </div>
     <script src="index.js"></script>
     <script>
+      function setDonationAmount(amount) {
+        document.getElementById("custom-amount").value = amount;
+      }
+
       // Select
       const stepDetail = document.querySelector(".step-detail");
       const directAddress = document.querySelector(".adoption-address.direct");
