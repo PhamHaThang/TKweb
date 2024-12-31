@@ -420,39 +420,37 @@
         const selectItemList = customSelect.querySelectorAll(".select-item");
         // Mở/đóng danh sách tùy chọn
         selectSelected.addEventListener("click", function () {
-          selectItems.style.opacity =
-            selectItems.style.opacity === "1" ? "0" : "1";
+          selectItems.style.display =
+            selectItems.style.display === "block" ? "none" : "block";
           selectSelected.classList.toggle("select-arrow-active");
         });
 
         // Xử lý khi chọn một tùy chọn
         selectItemList.forEach((item) => {
           item.addEventListener("click", function () {
-            if (selectItems.style.opacity === "1") {
-              selectSelected.innerHTML = this.innerHTML;
-              selectItems.style.opacity = "0";
-              selectSelected.classList.remove("select-arrow-active");
-              selectSelected.style.padding = "20px 60px 24px 34px";
-              const selectedValue = this.dataset.value;
-              console.log("Selected value:", selectedValue);
-              if (selectedValue === "direct") {
-                directAddress.style.display = "block";
-                deliveryAddress.style.display = "none";
-                stepDetail.style.paddingBottom = "50px";
-                adoptionFeeDisplay.innerText = "0 VND";
-              } else if (selectedValue === "delivery") {
-                stepDetail.style.paddingBottom = "50px";
-                directAddress.style.display = "none";
-                deliveryAddress.style.display = "block";
-                adoptionFeeDisplay.innerText = "25.000 VND";
-              }
+            selectSelected.innerHTML = this.innerHTML;
+            selectItems.style.display = "none";
+            selectSelected.classList.remove("select-arrow-active");
+            selectSelected.style.padding = "20px 60px 24px 34px";
+            const selectedValue = this.dataset.value;
+            console.log("Selected value:", selectedValue);
+            if (selectedValue === "direct") {
+              directAddress.style.display = "block";
+              deliveryAddress.style.display = "none";
+              stepDetail.style.paddingBottom = "50px";
+              adoptionFeeDisplay.innerText = "0 VND";
+            } else if (selectedValue === "delivery") {
+              stepDetail.style.paddingBottom = "50px";
+              directAddress.style.display = "none";
+              deliveryAddress.style.display = "block";
+              adoptionFeeDisplay.innerText = "25.000 VND";
             }
           });
         });
         // Đóng danh sách khi click ra ngoài
         document.addEventListener("click", function (event) {
           if (!customSelect.contains(event.target)) {
-            selectItems.style.opacity = "0";
+            selectItems.style.display = "none";
             selectSelected.classList.remove("select-arrow-active");
           }
         });

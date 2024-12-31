@@ -790,17 +790,17 @@
 
         // Mở/đóng danh sách tùy chọn
         selectSelected.addEventListener("click", function () {
-          selectItems.style.opacity =
-            selectItems.style.opacity === "1" ? "0" : "1";
+          selectItems.style.display =
+            selectItems.style.display === "block" ? "none" : "block";
           selectSelected.classList.toggle("select-arrow-active");
         });
 
         // Xử lý khi chọn một tùy chọn
         selectItemList.forEach((item) => {
           item.addEventListener("click", function () {
-            if ((selectItems.style.opacity === "1")) {
+            if ((selectItems.style.display === "block")) {
               selectSelected.textContent = this.textContent;
-              selectItems.style.opacity = "0";
+              selectItems.style.display = "none";
               selectSelected.classList.remove("select-arrow-active");
 
               // Lấy giá trị của tùy chọn (data-value)
@@ -812,7 +812,7 @@
         // Đóng danh sách khi click ra ngoài
         document.addEventListener("click", function (event) {
           if (!customSelect.contains(event.target)) {
-            selectItems.style.opacity = "0";
+            selectItems.style.display = "none";
             selectSelected.classList.remove("select-arrow-active");
           }
         });
