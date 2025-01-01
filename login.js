@@ -1,4 +1,9 @@
-
+function log(s) {
+  if (typeof window !== "undefined" && window.localStorage) {
+    localStorage.setItem("login", s);
+    console.log(localStorage.getItem("login"));
+  }
+}
 
 function checkLogin() {
   let currentUser = JSON.parse(localStorage.getItem("login"));
@@ -12,9 +17,3 @@ function checkLogin() {
   }
 }
 window.onload = checkLogin();
-function log(s) {
-  if (typeof window !== "undefined" && window.localStorage) {
-    localStorage.setItem("login", s);
-  }
-  
-}
