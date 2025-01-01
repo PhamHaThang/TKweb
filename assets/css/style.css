@@ -160,16 +160,19 @@
   font-weight: 700;
   line-height: 1.9; /* 118.75% */
 }
+
 .header .auth-links a:hover {
   color: #e74f2c;
 }
 .header .user {
   display: none;
+
   margin-left: 30.5px;
   align-items: center;
   gap: 12.5px;
   position: relative;
 }
+
 .header .user:hover .user-dropdown {
   display: block;
 }

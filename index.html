@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/favicon_io/favicon.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -40,18 +36,18 @@
           </div>
           <div class="nav-actions nav-right">
             <a href="donate.html" class="button button-secondary">Ủng hộ</a>
-            <div class="auth-links">
+            <div class="auth-links" id="auth-links">
               <a href="login.html">Đăng nhập</a>
               <span>/</span>
               <a href="signup.html">Đăng ký</a>
             </div>
-            <div class="user">
+            <div class="user" id="user">
               <img src="assets/img/user.svg" alt="" />
               <p class="heading-h18">Chức Nguyễn</p>
               <div class="user-dropdown">
                 <a href="profile.html">Tài khoản của tôi</a>
 
-                <a href="index-logout.html" class="logout">
+                <a href="index.html" class="logout" onclick="log('0')">
                   <img src="assets/img/logout.svg" alt="" />Đăng xuất</a
                 >
               </div>
@@ -76,7 +72,9 @@
           </p>
         </div>
         <div class="hero__action">
-          <a href="donate.html" class="button button-primary heading-h18">Ủng hộ</a>
+          <a href="donate.html" class="button button-primary heading-h18"
+            >Ủng hộ</a
+          >
 
           <a href="about-us.html" class="button button-primary">Về chúng tôi</a>
         </div>
@@ -364,7 +362,9 @@
                     Xem danh sách vật nuôi tại FurEver, dễ dàng tìm kiếm vật
                     nuôi yêu thích của bạn với bộ lọc theo từng đặc điểm.
                   </p>
-                  <a href="guide.html" class="button button-secondary step-button"
+                  <a
+                    href="guide.html"
+                    class="button button-secondary step-button"
                     >Xem thêm</a
                   >
                 </div>
@@ -381,7 +381,9 @@
                     thông tin chi tiết về quy trình nhận nuôi, các yêu cầu và
                     giấy tờ cần thiết.
                   </p>
-                  <a href="guide.html" class="button button-secondary step-button"
+                  <a
+                    href="guide.html"
+                    class="button button-secondary step-button"
                     >Xem thêm</a
                   >
                 </div>
@@ -398,7 +400,9 @@
                     sóc sức khỏe, cách huấn luyện và các kỹ năng cần thiết để
                     nuôi dưỡng các em chó mèo một cách tốt nhất.
                   </p>
-                  <a href="guide.html" class="button button-secondary step-button"
+                  <a
+                    href="guide.html"
+                    class="button button-secondary step-button"
                     >Xem thêm</a
                   >
                 </div>
@@ -529,7 +533,7 @@
         <img src="assets/img/facebook-contact.svg" alt="Chat" />
       </a>
     </div>
-
+    <script src="login.js"></script>
     <script src="index.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
