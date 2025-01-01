@@ -13,7 +13,7 @@ function checkLogin() {
     document.getElementById("user").style.display = "flex";
   } else {
     document.getElementById("user").style.display = "none";
-    document.getElementById("auth-links").style.display = "block";
+    document.querySelector(".auth-links").style.display = "block";
   }
 }
 window.onload = checkLogin();
