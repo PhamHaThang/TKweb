@@ -1,8 +1,3 @@
-function log(s) {
-  localStorage.setItem("login", s);
-  console.log(localStorage.getItem("login"));
-}
-
 function checkLogin() {
   let currentUser = localStorage.getItem("login");
   console.log(currentUser);
@@ -15,3 +10,7 @@ function checkLogin() {
   }
 }
 window.onload = checkLogin();
+function log(s) {
+  localStorage.setItem("login", s);
+  console.log(localStorage.getItem("login"));
+}
