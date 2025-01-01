@@ -10,12 +10,10 @@ function checkLogin() {
   }
 }
 window.onload = checkLogin();
-function log(s) {
-  if (s == "0") {
-    localStorage.removeItem("login");
-  }
-  if (s == "1") {
-    localStorage.setItem("login", "1");
-  }
+function logIn() {
+  localStorage.setItem("login", "1");
   console.log(localStorage.getItem("login"));
+}
+function logOut() {
+  localStorage.removeItem("login");
 }
