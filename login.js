@@ -2,8 +2,9 @@ function log(s) {
   localStorage.setItem("login", s);
   console.log(localStorage.getItem("login"));
 }
+
 function checkLogin() {
-  let currentUser = JSON.parse(localStorage.getItem("login"));
+  let currentUser = localStorage.getItem("login");
   console.log(currentUser);
   if (currentUser == "1") {
     document.querySelector(".auth-links").style.display = "none";
